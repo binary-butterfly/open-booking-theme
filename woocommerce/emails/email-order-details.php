@@ -37,7 +37,7 @@ do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plai
 
 <div>
     <p>Sie können zu Ihrer gebuchten Zeit</p>
-    <a href="<?php echo($order->get_checkout_order_received_url()); ?>" style="background-color: #40b93c; display: block; cursor: pointer; padding: .6180469716em 1.41575em; text-align: center;">
+    <a href="<?php echo($order->get_checkout_order_received_url()); ?>" style="background-color: #006f31; display: block; cursor: pointer; padding: .6180469716em 1.41575em; margin-bottom: 15px; text-align: center; color: #FFF">
         Die Box öffnen und schließen
     </a>
 </div>
