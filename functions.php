@@ -71,3 +71,24 @@ add_action('wp_loaded', function () {
     remove_action('admin_notices', 'vendidero_helper_notice');
     remove_action('admin_notices', 'woothemes_updater_notice');
 });
+
+add_filter('woocommerce_billing_fields', function ($fields = array() ) {
+    unset($fields['billing_company']);
+    unset($fields['billing_address_1']);
+    unset($fields['billing_address_2']);
+    unset($fields['billing_state']);
+    unset($fields['billing_city']);
+    unset($fields['billing_phone']);
+    unset($fields['billing_postcode']);
+    unset($fields['billing_country']);
+
+    return $fields;
+});
+
+add_filter( 'woocommerce_checkout_fields', function ( $fields ) {
+    unset($fields['billing']['billing_company']);
+    unset($fields['billing']['billing_address_1']);
+    unset($fields['billing']['billing_postcode']);
+    unset($fields['billing']['billing_state']);
+    return $fields;
+}, 99);
