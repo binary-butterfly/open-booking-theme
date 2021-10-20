@@ -29,7 +29,7 @@ add_filter('storefront_copyright_text', function () { return ''; }, 10, 0);
 
 
 add_filter('storefront_credit_links_output', function () {
-    return '&copy; stadtnavi ' . gmdate( 'Y' ) . ' | <a href="/datenschutz">Datenschutz</a> | <a href="/impressum">Impressum</a>';
+    return '&copy; AllRad ' . gmdate( 'Y' ) . ' | <a href="/datenschutz">Datenschutz</a> | <a href="/impressum">Impressum</a>';
 }, 10, 0);
 
 
